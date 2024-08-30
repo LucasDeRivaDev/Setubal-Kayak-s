@@ -1,0 +1,169 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cecbba;
+}
+
+header {
+    background-image: url('img/iniciokayaks.jpg');
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: auto;
+    height: 900px;
+}
+
+.logo {
+    width: 153px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #124153;
+}
+
+.contact-info a, .contact-info span {
+    margin-right: 15px;
+    color: #124153;
+}
+
+.fab fa-whatsapp {
+    width: 24px;
+    height: 24px;
+}
+
+.fab fa-instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.hero {
+    padding-top: 300px;
+    padding-right: 950px;
+}
+
+nav {
+    background-color: #124153;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+.intro-images, .activities, .kayaks, .cursos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-images img, .activity, .kayak, .curso {
+    width: 30%;
+    text-align: center;
+}
+
+.cursos-lista {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cursos-lista button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #004f73;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #004f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 100px;
+}
+
+.social-media a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-images img, .activity, .kayak, .curso {
+        width: 45%;
+    }
+
+    .intro-images, .activities, .kayaks, .cursos {
+        justify-content: center;
+    }
+
+    .contact-info a, .contact-info span {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-images img, .activity, .kayak, .curso {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
