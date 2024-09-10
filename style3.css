@@ -1,0 +1,640 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cecbba;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #cecbba;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    color: #124153;
+    margin: 0;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('img/iniciokayaks.jpg'); /* Reemplaza con la imagen real */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 51, 102, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.play-button:hover {
+    color: #ddd;
+}
+
+/* Navigation */
+nav {
+    background-color: #124153;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #5c91a3;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #cecbba;
+    color: #000;
+    text-align: left;
+}
+
+.about h2 {
+    padding-left: 250px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    padding: 5px 1000px 0px 270px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-images {
+    padding-left: 300px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.about-images img {
+    margin: 20px;
+    width: 35%;
+    border-radius: 20px;
+}
+
+/* Actividades Section */
+.actividades {
+    margin: 20px;
+    padding: 20px;
+    background-color: #cecbba;
+    color: #333;
+}
+
+.actividades h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.actividades p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #000;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Embarcaciones Section */
+.embarcaciones {
+    background-color: #cecbba;
+    margin: 20px;
+    padding: 20px;
+}
+
+.embarcaciones h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.embarcaciones p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-large {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-large img {
+    width: 50%;
+    height: auto;
+}
+
+.card-large .card-content {
+    padding: 20px;
+}
+
+.card-large h3 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-large p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-large .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Seccion de ventas de cayak's */
+.ventas {
+    padding: 60px 20px;
+    background-color: #5c91a3;
+    color: #000;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #124153;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #124153;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.card-content .btn:hover {
+    background-color: #f0a500;
+}
+
+/* Form Section */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #124153;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container form input,
+.form-container form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #124153;
+}
+
+.form-container form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container form button i {
+    margin-right: 5px;
+}
+
+.form-container form button:hover {
+    background-color: #20b954;
+}
+
+.courses-section {
+    background-color: #d3cbb8; /* Color de fondo similar al de la imagen */
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.courses-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.courses-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.courses-header p {
+    font-size: 16px;
+    color: #000;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.courses-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 320px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid transparent;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #0056b3;
+}
+
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.course-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.course-item button {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-item button:hover {
+    background-color: #5a6268;
+}
+
+.footer {
+    background-color: #d0cabd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-agencies {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-agencies h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-agencies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-agencies li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-agencies button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .footer-contact {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .footer-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .footer-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-contacts, .footer-ecotourism {
+    text-align: left;
+  }
+  
+  .footer-contacts h3, .footer-ecotourism h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .footer-contacts p, .footer-ecotourism p {
+    margin: 5px 0;
+  }
+  
+  .footer-contacts i, .footer-ecotourism i {
+    margin-right: 10px;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .play-button {
+        font-size: 40px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+    
+    .card-large {
+        flex-direction: column;
+    }
+
+    .card-large img {
+        width: 100%;
+    }
+}
