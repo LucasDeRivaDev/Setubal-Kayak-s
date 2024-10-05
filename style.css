@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #cecbba;
+  
     position: absolute;
     width: 100%;
     top: 0;
@@ -500,113 +500,146 @@ nav ul li a:hover {
     background-color: #5a6268;
 }
 
-.footer {
-    background-color: #d0cabd;
+/* Agencias */
+.agencias {
+    background-color: #d0ccb8; 
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
   }
   
-  .footer-agencies {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .footer-agencies h2 {
+  .agencias h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #000;
+    margin-bottom: 20px;
   }
   
-  .footer-agencies ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-agencies li {
-    margin-bottom: 10px;
+  .agencia {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
   }
   
-  .footer-agencies button {
+  .agencia p {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+  }
+  
+  .agencia button {
     background-color: #fff;
+    color: #124153;
     border: 1px solid #ccc;
-    padding: 5px 10px;
+    padding: 5px 15px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .footer-contact {
-    flex: 2;
-    margin-right: 20px;
-  }
+  .agencia button:hover {
+    background-color: #f0f0f0;
+  } 
   
-  .footer-image {
+  /* Estilo general del footer */
+.footer {
+    position: relative;
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    background-color: #0e4a57;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .footer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  .footer-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+  
+  /* Formulario */
+  .footer-form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
   }
   
   .footer-form {
     display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
   
   .footer-form input {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
   }
   
   .footer-form button {
-    background-color: #0056b3;
+    background-color: #5b768e;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px 30px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
   }
   
-  .footer-info {
-    flex: 1;
-    text-align: center;
+  .footer-form button:hover {
+    background-color: #4a5e70;
   }
   
-  .footer-logo img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  
-  .footer-socials {
+  /* Footer bottom: contacto, logo, ecoturismo */
+  .footer-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
   }
   
-  .footer-contacts, .footer-ecotourism {
+  .footer-contact, .footer-contact-right {
     text-align: left;
+    width: 25%;
   }
   
-  .footer-contacts h3, .footer-ecotourism h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .footer-contacts p, .footer-ecotourism p {
+  .footer-contact p, .footer-contact-right p {
     margin: 5px 0;
   }
   
-  .footer-contacts i, .footer-ecotourism i {
-    margin-right: 10px;
+  .footer-logo {
+    width: 150px;
+    height: auto;
   }
-
+  
+  .footer-logo img {
+    width: 100%;
+  }
+  
+  .footer-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .footer-icons i:hover {
+    color: #5b768e;
+  }
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
