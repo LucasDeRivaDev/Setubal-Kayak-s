@@ -1,4 +1,12 @@
-/* Reset */
+:root {
+  --color_primario: #124153;
+  --color_primario_suave: #124153;
+  --color_blanco: #fff;
+  --altura_header: 80px;
+  --padding_left_right: 2rem;
+  --ancho_maximo: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,18 +94,74 @@ header {
   margin-bottom: 20px;
 }
 
-.play-button {
-  font-size: 50px;
-  color: #fff;
+a{
   text-decoration: none;
 }
 
-.play-button:hover {
-  color: #ddd;
+ol,ul{
+  list-style: none;
+}
+
+.headerr {
+  height: var(--altura_header);
+  background-color: var(--color_primario);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 var(--padding_left_right);
+}
+
+.menu-hamburguesa{
+  display: none;
+}
+
+.menu-hamburguesa:checked + .ul_links {
+  height: calc(100vh - var(--altura_header));
+}
+
+.label-hamburguesa{
+
+}
+
+.list-icon {
+  color: var(--color_blanco);
+  cursor: pointer;
+}
+
+.ul-links {
+  width: 100%;
+  background-color: var(--color_primario_suave);
+  position: absolute;
+  top: var(--altura_header);
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  /* height: calc(100vh - var(--altura_header)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all .3s;
+}
+
+.li-links{
+
+}
+
+.link {
+  font-size: 3rem;
+  color: var(--color_blanco);
+  font-weight: bold;
 }
 
 /* Navigation */
-nav {
+/*nav {
   background-color: #124153;
   padding: 10px 0;
   position: absolute;
@@ -123,12 +187,9 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #5c91a3;
-}
+}*/
 
 /* About Section */
-.about {
-}
-
 .about h2 {
   font-size: 36px;
   font-weight: bold;
@@ -158,9 +219,6 @@ nav ul li a:hover {
 }
 
 /* Actividades Section */
-.actividades {
-}
-
 .actividades h2 {
   color: #000;
   font-size: 28px;
@@ -181,7 +239,6 @@ nav ul li a:hover {
 }
 
 .card {
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -202,7 +259,7 @@ nav ul li a:hover {
 }
 
 .card p {
-  color: #555;
+  color: #000;
   font-size: 14px;
   padding: 0 10px;
 }
@@ -218,9 +275,6 @@ nav ul li a:hover {
 }
 
 /* Embarcaciones Section */
-.embarcaciones {
-}
-
 .embarcaciones h2 {
   color: #000;
   font-size: 28px;
@@ -637,17 +691,13 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .hero h1 {
     font-size: 32px;
-  }
-
-  .play-button {
-    font-size: 40px;
   }
 
   .contact-info {
@@ -670,4 +720,23 @@ nav ul li a:hover {
   .card-large img {
     width: 100%;
   }
+  .label-hamburguesa {
+    display: none;
+}
+.ul-links{
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+}
+.link{
+    font-size: 2rem;
+    transition: all .3s;
+    padding: 1.2rem 6rem;
+}
+.link:hover{
+    border-radius: 5rem;
+    background-color: rgba(92, 145, 163, 0.2);
+}
 }
