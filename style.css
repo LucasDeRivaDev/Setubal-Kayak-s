@@ -19,13 +19,11 @@ body {
   color: #fff;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-
+  padding: 0px 50px 0px 50px;
   position: absolute;
   width: 100%;
   top: 0;
@@ -41,7 +39,8 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 150px;
+  padding-left: 50px;
 }
 
 .contact-info {
@@ -63,7 +62,7 @@ header {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url("img/iniciokayaks.jpg"); /* Reemplaza con la imagen real */
+  background-image: url("img/imagen\ principal.jpg"); /* Reemplaza con la imagen real */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -85,6 +84,7 @@ header {
 .hero-content {
   position: relative;
   z-index: 2;
+  padding-bottom: 280px;
 }
 
 .hero h1 {
@@ -105,6 +105,7 @@ ol,ul{
 .headerr {
   height: var(--altura_header);
   background-color: var(--color_primario);
+  
 }
 
 .navbar {
@@ -151,7 +152,7 @@ ol,ul{
 }
 
 .li-links{
-
+  
 }
 
 .link {
@@ -335,6 +336,7 @@ nav ul li a:hover {
 }
 
 .card-container {
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -470,6 +472,7 @@ nav ul li a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   flex: 1;
+  width: 400px;
 }
 
 .course-card img {
@@ -484,13 +487,13 @@ nav ul li a:hover {
 
 .card-content h3 {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   margin-bottom: 10px;
 }
 
 .card-content p {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -685,13 +688,33 @@ nav ul li a:hover {
 }
 /* Responsive Design */
 
-@media (max-width: 1100px) {
+@media (min-width: 768px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .label-hamburguesa {
+    display: none;
+  }
+
+  .ul-links{
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .link{
+    font-size: 2rem;
+    transition: all .3s;
+    padding: 1.2rem 6rem;
+  }
+  .link:hover{
+    border-radius: 5rem;
+    background-color: rgba(92, 145, 163, 0.2);
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1100px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -701,7 +724,6 @@ nav ul li a:hover {
   }
 
   .contact-info {
-    flex-direction: column;
     align-items: flex-end;
   }
 
@@ -720,23 +742,5 @@ nav ul li a:hover {
   .card-large img {
     width: 100%;
   }
-  .label-hamburguesa {
-    display: none;
-}
-.ul-links{
-    position: static;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    gap: 2rem;
-}
-.link{
-    font-size: 2rem;
-    transition: all .3s;
-    padding: 1.2rem 6rem;
-}
-.link:hover{
-    border-radius: 5rem;
-    background-color: rgba(92, 145, 163, 0.2);
-}
+ 
 }
