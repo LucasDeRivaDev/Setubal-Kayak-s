@@ -50,7 +50,7 @@ header {
 }
 
 .contact-info p {
-  font-size: 15px;
+  font-size: 20px;
   color: #124153;
   margin: 0;
 }
@@ -190,7 +190,6 @@ nav ul li a:hover {
   background-color: #5c91a3;
 }*/
 
-/* About Section */
 .about h2 {
   font-size: 36px;
   font-weight: bold;
@@ -250,7 +249,7 @@ nav ul li a:hover {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .card h3 {
@@ -329,7 +328,6 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Seccion de ventas de cayak's */
 .ventas {
   background-color: #5c91a3;
   text-align: center;
@@ -379,7 +377,7 @@ nav ul li a:hover {
   background-color: #f0a500;
 }
 
-/* Form Section */
+
 .form-container {
   background-color: #fff;
   padding: 20px;
@@ -472,7 +470,7 @@ nav ul li a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   flex: 1;
-  width: 400px;
+  width: 600px;
 }
 
 .course-card img {
@@ -669,7 +667,7 @@ nav ul li a:hover {
 }
 
 .footer-logo {
-  width: 150px;
+  width: 350px;
   height: auto;
 }
 
