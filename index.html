@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setubal Kayak's</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -25,7 +28,7 @@
         <h1>¡AVENTURA Y DIVERSIÓN EN CADA REMADA!</h1>
       </div>
     </section>
-<!--<nav>
+    <!--<nav>
       <ul>
         <li><a href="#intro">01 INTRO</a></li>
         <li><a href="#actividades">02 ACTIVIDADES</a></li>
@@ -37,11 +40,26 @@
     <div class="headerr">
       <nav class="navbar">
         <label class="label-hamburguesa" for="menu-hamburguesa">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="list-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
           </svg>
         </label>
-        <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+        <input
+          class="menu-hamburguesa"
+          type="checkbox"
+          name=""
+          id="menu-hamburguesa"
+        />
         <ul class="ul-links">
           <li class="li-links">
             <a href="#intro" class="link">Intro</a>
@@ -211,7 +229,7 @@
             <button>Leer más</button>
           </div>
         </div>
-        
+
         <div class="course-card">
           <img src="img/certificado.jpg" alt="Curso 2" />
           <div class="card-content">
@@ -220,8 +238,6 @@
             <button>Leer más</button>
           </div>
         </div>
-
-        
       </div>
       <div class="courses-list">
         <div class="course-item">
@@ -278,7 +294,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-bg">
-          <img src="img/footer.jpg" alt="Background Image" class="footer-background"/>
+          <img
+            src="img/footer.jpg"
+            alt="Background Image"
+            class="footer-background"
+          />
         </div>
 
         <div class="footer-form-container">
@@ -309,5 +329,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Referencias a elementos
+      const hamburguesa = document.getElementById("hamburguesa");
+      const menu = document.getElementById("menu");
+
+      // Agregar funcionalidad de clic
+      hamburguesa.addEventListener("click", () => {
+        menu.classList.toggle("show"); // Muestra o oculta el menú
+      });
+
+      // Ocultar menú al hacer clic fuera
+      document.addEventListener("click", (e) => {
+        if (!hamburguesa.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.remove("show");
+        }
+      });
+    </script>
   </body>
 </html>
