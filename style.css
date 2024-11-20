@@ -80,7 +80,7 @@ header {
 }
 
 .link:hover {
-  color: #f0a500;
+  color: #cecbba;
 }
 
 .container {
@@ -188,44 +188,12 @@ ul {
   display: block;
 }
 
-.li-links {
-}
-
 .link {
   font-size: 3rem;
   color: var(--color_blanco);
   font-weight: bold;
   padding: 0.5rem;
 }
-
-/* Navigation */
-/*nav {
-  background-color: #124153;
-  padding: 10px 0;
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  bottom: 0;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-nav ul li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-}
-
-nav ul li a:hover {
-  background-color: #5c91a3;
-}*/
 
 .about h2 {
   font-size: 36px;
@@ -644,42 +612,6 @@ nav ul li a:hover {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.5);
-}
-
-/* Formulario */
-.footer-form-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.footer-form {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-form input {
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  width: 250px;
-  font-size: 16px;
-}
-
-.footer-form button {
-  background-color: #5b768e;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.footer-form button:hover {
-  background-color: #4a5e70;
 }
 
 /* Footer bottom: contacto, logo, ecoturismo */
