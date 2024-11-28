@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color_primario: #124153;
   --color_primario_suave: #124153;
@@ -5,10 +9,6 @@
   --altura_header: 85px;
   --padding_left_right: 2rem;
   --ancho_maximo: 1200px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 * {
@@ -96,6 +96,7 @@ header {
 }
 
 .contact-info {
+  padding-left: 1000px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -614,7 +615,6 @@ ul {
   filter: brightness(0.5);
 }
 
-/* Footer bottom: contacto, logo, ecoturismo */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
