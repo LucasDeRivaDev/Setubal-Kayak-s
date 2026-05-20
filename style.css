@@ -173,6 +173,10 @@ header {
   opacity: 0.75;
 }
 
+.contact-info a i {
+  font-size: 1.5em;
+}
+
 /* ===== HERO ===== */
 .hero {
   height: 100vh;
