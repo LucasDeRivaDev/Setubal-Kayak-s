@@ -5,284 +5,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setubal Kayak's</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="icon" href="img/LOGOinvi.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="img/LOGOinvi.ico" />
   </head>
   <body>
+
+    <!-- Barra superior de contacto -->
     <header>
       <div class="logo">
         <img src="img/LOGOinvi.png" alt="Setubal Kayak's Logo" />
       </div>
       <div class="contact-info">
-        <a href="mailto:setubalkayaks@gmail.com" target="_blank">setubalkayaks@gmail.com</a>
-        <a href="https://wa.me/543424475236" target="_blank"><i class="fab fa-whatsapp"></i>54 342-447-5236</a>
-        <a href="https://www.instagram.com/setubal_kayaks" target="_blank"><i class="fab fa-instagram"></i>@setubal_kayaks</a>
+        <a href="mailto:setubalkayaks@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i> setubalkayaks@gmail.com
+        </a>
+        <a href="https://wa.me/543424475236" target="_blank">
+          <i class="fab fa-whatsapp"></i> 54 342-447-5236
+        </a>
+        <a href="https://www.instagram.com/setubal_kayaks" target="_blank">
+          <i class="fab fa-instagram"></i> @setubal_kayaks
+        </a>
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="hero">
       <div class="overlay"></div>
       <div class="hero-content">
-        <h1>¡AVENTURA Y DIVERSIÓN EN CADA REMADA!</h1>
+        <h1>AVENTURA Y DIVERSIÓN<br />EN CADA REMADA</h1>
+        <p class="hero-sub">Experiencias únicas en kayak en la Laguna Setúbal</p>
+        <a href="https://wa.me/543424475236" target="_blank" class="btn-hero">
+          <i class="fab fa-whatsapp"></i> Reservar ahora
+        </a>
       </div>
     </section>
 
+    <!-- Navegación sticky -->
     <div class="headerr">
       <nav class="navbar">
         <label class="label-hamburguesa" for="menu-hamburguesa">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
           </svg>
         </label>
-        <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa"/>
+        <input class="menu-hamburguesa" type="checkbox" id="menu-hamburguesa" />
         <ul class="ul-links">
-          <li class="li-links">
-            <a href="#intro" class="link">Intro</a>
-          </li>
-          <li class="li-links">
-            <a href="#actividades" class="link">Actividades</a>
-          </li>
-          <li class="li-links">
-            <a href="#equipamiento" class="link">Equipamiento</a>
-          </li>
-          <li class="li-links">
-            <a href="#cursos" class="link">Cursos</a>
-          </li>
-          <li class="li-links">
-            <a href="#agencias" class="link">Agencias</a>
-          </li>
+          <li><a href="#intro" class="link">Nosotros</a></li>
+          <li><a href="#actividades" class="link">Actividades</a></li>
+          <li><a href="#equipamiento" class="link">Embarcaciones</a></li>
+          <li><a href="#cursos" class="link">Cursos</a></li>
+          <li><a href="#agencias" class="link">Agencias</a></li>
         </ul>
       </nav>
     </div>
 
-    <section class="about container" id="intro">
-      <h2>¿Quiénes somos Setubal Kayak's?</h2>
-      <p>
-        Setubal Kayaks es un emprendimiento familiar que comenzó en 2016
-        llevando gente a disfrutar de actividades náuticas en la Laguna Setúbal.
-        A lo largo de los años, se han adaptado a las circunstancias, incluyendo
-        la pandemia y la bajante histórica, para convertirse en un
-        emprendimiento turístico con agencias en varias localidades cercanas.
-      </p>
-      <p>
-        En Setubal Kayak ofrece paseos en kayak, excursiones, travesías,
-        campamentos, avistaje, fotografía, eventos y clases de iniciación en
-        kayak y piraguas en entornos naturales. También realizamos eventos
-        especiales como cumpleaños, egresados, boy scout y travesías temáticas.
-      </p>
-      <div class="about-images">
-        <img src="img/fotocarlos1.JPG" alt="Kayak Image 1" />
-        <img src="img/fotocarlos3.jpg" alt="Kayak Image 2" />
-      </div>
-    </section>
-    <!-- Sección de Actividades -->
-    <section class="actividades container" id="actividades">
-      <h2>Nuestras actividades</h2>
-      <p>
-        Descubre la naturaleza con Setubal Kayaks a través de nuestras
-        emocionantes actividades: paseos en kayak, excursiones, travesías,
-        campamentos, avistaje, fotografía y clases de iniciación en kayak y
-        piraguas. Además, organizamos eventos especiales como cumpleaños,
-        egresados, actividades para Boy Scouts y travesías temáticas. No te
-        pierdas nuestros paseos al atardecer, nocturnos y durante la luna llena.
-      </p>
-      <p>
-        Nuestro equipo de guías expertos se asegura de que cada aventura sea
-        segura, divertida e inolvidable. ¡Únete a nosotros y vive una
-        experiencia única en kayak!
-      </p>
-      <div class="cards">
-        <div class="card">
-          <img src="img/actividades.JPG" alt="Paseos en Kayaks" />
-          <h3>Paseos en Kayak's</h3>
-          <p>Ofrecemos paseos, excursiones, travesías...</p>
-          <!-----<a href="#" class="btn">Más información</a>---->
-        </div>
-        <div class="card">
-          <img src="img/fotografia.jpg" alt="Fotografía" />
-          <h3>Fotografía</h3>
-          <p>Avistajes, paseos temáticos, paseos al atardecer...</p>
-          <!-----<a href="#" class="btn">Más información</a>---->
-        </div>
-        <div class="card">
-          <img src="img/campamentos.jpg" alt="Campamentos" />
-          <h3>Campamentos</h3>
-          <p>Campamentos, paseos nocturnos, full moon...</p>
-         <!-----<a href="#" class="btn">Más información</a>---->
-        </div>
-      </div>
-    </section>
-    <!-- Sección de Embarcaciones -->
-    <section class="embarcaciones container" id="equipamiento">
-      <h2>Descubre nuestras embarcaciones en venta</h2>
-      <p>
-        Encuentra la embarcación perfecta para tus aventuras. Explora nuestra
-        colección Kayak's, equipamientos, accesorios y más.
-      </p>
-      <div class="card-large">
-        <img src="img/nuestras embarcaciones 1.jpg" alt="Nuestros Kayaks" />
-        <div class="card-content">
-          <h3>Nuestros Kayak's</h3>
+    <!-- Quiénes somos -->
+    <section class="about" id="intro">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>¿Quiénes somos?</h2>
           <p>
-            Los Kayak's: se denominan kayak pero el término es bote
-            rotomoldeado. Es un kayak de alta prestación, de muy fácil maniobra
-            y de gran capacidad de carga. Este tipo de bote no necesita que el
-            remador sepa nadar y tampoco tener experiencia...
+            Setubal Kayaks es un emprendimiento familiar que comenzó en 2016
+            llevando gente a disfrutar de actividades náuticas en la Laguna Setúbal.
+            A lo largo de los años nos adaptamos a cada circunstancia —incluyendo
+            la pandemia y la bajante histórica— para crecer como referente turístico
+            con agencias en toda la región.
           </p>
-          <!----<a href="#" class="btn">Seguir leyendo</a>---->
+          <p>
+            Ofrecemos paseos en kayak, excursiones, travesías, campamentos,
+            avistaje de fauna, fotografía, eventos y clases de iniciación. También
+            organizamos cumpleaños, egresados, actividades para Boy Scouts y
+            travesías temáticas especiales.
+          </p>
+        </div>
+        <div class="about-images">
+          <img src="img/fotocarlos1.JPG" alt="Equipo Setubal Kayaks" />
+          <img src="img/fotocarlos3.jpg" alt="Actividades en kayak" />
         </div>
       </div>
     </section>
-    <section class="ventas">
+
+    <!-- Actividades -->
+    <section class="actividades-section" id="actividades">
       <div class="container">
-        <div class="card-container">
-          <div class="card-item">
-            <img src="img/kayakssimple.png" alt="Kayak Simple" />
-            <div class="card-content">
-              <h3>Kayak Simple</h3>
-              <!---<a href="#" class="btn">Ver más</a>--->
+        <div class="section-header">
+          <h2>Nuestras actividades</h2>
+          <p>
+            Descubrí la naturaleza con guías expertos que garantizan seguridad,
+            diversión y experiencias inolvidables en el agua.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="img/actividades.JPG" alt="Paseos en Kayaks" />
+            </div>
+            <div class="card-body">
+              <h3>Paseos en Kayak</h3>
+              <p>Paseos, excursiones, travesías y salidas al atardecer, nocturnas y de luna llena.</p>
             </div>
           </div>
-          <div class="card-item">
-            <img src="img/kayaksdoble.png" alt="Kayak Doble" />
-            <div class="card-content">
-              <h3>Kayak Doble</h3>
-              <!---<a href="#" class="btn">Ver más</a>--->
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="img/fotografia.jpg" alt="Fotografía y avistaje" />
+            </div>
+            <div class="card-body">
+              <h3>Avistaje y Fotografía</h3>
+              <p>Paseos temáticos para capturar la fauna y los paisajes únicos de la laguna.</p>
             </div>
           </div>
-          <div class="card-item">
-            <img src="img/kayakstriple.png" alt="Kayak Triple" />
-            <div class="card-content">
-              <h3>Kayak Triple</h3>
-              <!---<a href="#" class="btn">Ver más</a>--->
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="img/campamentos.jpg" alt="Campamentos" />
+            </div>
+            <div class="card-body">
+              <h3>Campamentos</h3>
+              <p>Campamentos, travesías nocturnas y experiencias de luna llena en plena naturaleza.</p>
             </div>
           </div>
-          <div class="card-item">
-            <img src="img/indumentaria.png" alt="Indumentaria" />
-            <div class="card-content">
-              <h3>Indumentaria</h3>
-              <!---<a href="#" class="btn">Ver más</a>--->
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <section class="courses-section container" id="cursos">
-      <div class="courses-header">
-        <h2>Nuestros cursos</h2>
-        <p>
-          Descubre todos los conocimientos y habilidades que necesitas para
-          disfrutar al máximo del kayak. Nuestros cursos, impartidos por los
-          mejores expertos, te prepararán para vivir una experiencia segura y
-          emocionante en el agua.
-        </p>
-      </div>
-      <div class="courses-cards card-container">
-        <div class="course-card">
-          <img src="img/nuestros cursos.jpg" alt="Curso 1" />
-          <div class="card-content">
-            <h3>¡Aprende con los mejores expertos!</h3>
-            <p>Conoce a todos los integrantes de Setubal Kayak's.</p>
-            <button>Leer más</button>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <img src="img/certificado.jpg" alt="Curso 2" />
-          <div class="card-content">
-            <h3>Certificación Nacional</h3>
-            <p>Nuestros cursos</p>
-            <button>Leer más</button>
-          </div>
-        </div>
-      </div>
-      <div class="courses-list">
-        <div class="course-item">
-          <h4>Iniciación</h4>
-          <button>Quiero información</button>
-        </div>
-        <div class="course-item">
-          <h4>Rescate</h4>
-          <button>Quiero información</button>
-        </div>
-        <div class="course-item">
-          <h4>Travesía</h4>
-          <button>Quiero información</button>
-        </div>
-        <div class="course-item">
-          <h4>Protocolos de seguridad</h4>
-          <button>Quiero información</button>
         </div>
       </div>
     </section>
 
-    <section class="agencias container" id="agencias">
-      <h2>Agencias</h2>
-      <div class="agencia">
-        <p>Casa central</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Setubal Kayak´s!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Ecoturismo</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Setubal Kayak´s!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Kayak's Rincón</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Kayak's Rincón!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Montevera Kayak's</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Montevera Kayak's!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Sauce Viejo Kayak's</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Sauce Viejo Kayak's!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Santo Tomé Kayak's</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Santo Tomé Kayak´s!" target="_blank"><button>Contacto</button></a>
-      </div>
-      <div class="agencia">
-        <p>Laguna Paiva Kayak's</p>
-        <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola, Laguna Paiva Kayak´s!" target="_blank"><button>Contacto</button></a>
+    <!-- Embarcaciones -->
+    <section class="embarcaciones" id="equipamiento">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestras embarcaciones</h2>
+          <p>
+            Contamos con una flota de kayaks de alta prestación, fácil maniobra
+            y gran capacidad de carga, aptos para todo público sin experiencia previa.
+          </p>
+        </div>
+        <div class="card-large">
+          <img src="img/nuestras embarcaciones 1.jpg" alt="Nuestros Kayaks" />
+          <div class="card-large-content">
+            <h3>Kayaks rotomoldeados</h3>
+            <p>
+              Nuestros botes rotomoldeados son de alta prestación y muy fácil maniobra,
+              con gran capacidad de carga. No es necesario saber nadar ni tener
+              experiencia previa para disfrutar de la experiencia.
+            </p>
+            <a href="https://wa.me/543424475236" target="_blank" class="btn">Consultar disponibilidad</a>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Cursos -->
+    <section class="courses-section" id="cursos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestros cursos</h2>
+          <p>
+            Adquirí las habilidades necesarias para disfrutar al máximo del kayak.
+            Cursos impartidos por expertos con certificación nacional.
+          </p>
+        </div>
+        <div class="courses-cards">
+          <div class="course-card">
+            <div class="course-card-img">
+              <img src="img/nuestros cursos.jpg" alt="Expertos en kayak" />
+            </div>
+            <div class="course-card-body">
+              <h3>Aprendé con los mejores</h3>
+              <p>Conocé a todos los instructores de Setubal Kayak's.</p>
+              <a href="https://wa.me/543424475236" target="_blank" class="btn">Más información</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-card-img">
+              <img src="img/certificado.jpg" alt="Certificación nacional" />
+            </div>
+            <div class="course-card-body">
+              <h3>Certificación Nacional</h3>
+              <p>Obtené tu certificado oficial con nuestros programas avalados.</p>
+              <a href="https://wa.me/543424475236" target="_blank" class="btn">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="courses-list">
+          <div class="course-item">
+            <span class="course-icon"><i class="fas fa-water"></i></span>
+            <h4>Iniciación</h4>
+            <a href="https://wa.me/543424475236?text=Hola%2C%20quiero%20información%20sobre%20el%20curso%20de%20Iniciación" target="_blank" class="btn-outline">Quiero información</a>
+          </div>
+          <div class="course-item">
+            <span class="course-icon"><i class="fas fa-life-ring"></i></span>
+            <h4>Rescate</h4>
+            <a href="https://wa.me/543424475236?text=Hola%2C%20quiero%20información%20sobre%20el%20curso%20de%20Rescate" target="_blank" class="btn-outline">Quiero información</a>
+          </div>
+          <div class="course-item">
+            <span class="course-icon"><i class="fas fa-map-marked-alt"></i></span>
+            <h4>Travesía</h4>
+            <a href="https://wa.me/543424475236?text=Hola%2C%20quiero%20información%20sobre%20el%20curso%20de%20Travesía" target="_blank" class="btn-outline">Quiero información</a>
+          </div>
+          <div class="course-item">
+            <span class="course-icon"><i class="fas fa-shield-alt"></i></span>
+            <h4>Protocolos de seguridad</h4>
+            <a href="https://wa.me/543424475236?text=Hola%2C%20quiero%20información%20sobre%20Protocolos%20de%20Seguridad" target="_blank" class="btn-outline">Quiero información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agencias -->
+    <section class="agencias-section" id="agencias">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestras agencias</h2>
+          <p>Presente en toda la región con puntos de contacto cercanos a vos.</p>
+        </div>
+        <div class="agencias-grid">
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Casa Central</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Setubal%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Ecoturismo</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Setubal%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Kayak's Rincón</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Kayak's%20Rincón!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Montevera Kayak's</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Montevera%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Sauce Viejo Kayak's</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Sauce%20Viejo%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Santo Tomé Kayak's</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Santo%20Tomé%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+          <div class="agencia-card">
+            <div class="agencia-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Laguna Paiva Kayak's</p>
+            <a href="https://api.whatsapp.com/send?phone=3424475236&text=Hola%2C%20Laguna%20Paiva%20Kayak's!" target="_blank" class="btn">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <div class="footer-content">
-        <p><strong>Contacto</strong></p>
-        <p><a href="tel:+543424475236" target="_blank">54 342-447-5236</a></p>
-        <p><a href="https://instagram.com/setubal_kayaks" target="_blank">@setubal_kayaks</a></p>
+      <div class="footer-col">
+        <p class="footer-title">Contacto</p>
+        <a href="tel:+543424475236"><i class="fas fa-phone"></i> 54 342-447-5236</a>
+        <a href="https://wa.me/543424475236" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://instagram.com/setubal_kayaks" target="_blank"><i class="fab fa-instagram"></i> @setubal_kayaks</a>
       </div>
-    
       <div class="footer-logo">
-        <img src="img/LOGOinvi.png" alt="Setubal Kayak's Logo">
+        <img src="img/LOGOinvi.png" alt="Setubal Kayak's Logo" />
       </div>
-    
-      <div class="footer-content">
-        <p><strong>Ecoturismo ®</strong></p>
-        <p><a href="mailto:setubalkayaks@gmail.com">setubalkayaks@gmail.com</a></p>
+      <div class="footer-col">
+        <p class="footer-title">Ecoturismo ®</p>
+        <a href="mailto:setubalkayaks@gmail.com"><i class="fas fa-envelope"></i> setubalkayaks@gmail.com</a>
       </div>
     </footer>
-    <script>
-      // Referencias a elementos
-      const hamburguesa = document.getElementById("hamburguesa");
-      const menu = document.getElementById("menu");
 
-      // Agregar funcionalidad de clic
-      hamburguesa.addEventListener("click", () => {
-        menu.classList.toggle("show"); // Muestra o oculta el menú
-      });
-
-      // Ocultar menú al hacer clic fuera
-      document.addEventListener("click", (e) => {
-        if (!hamburguesa.contains(e.target) && !menu.contains(e.target)) {
-          menu.classList.remove("show");
-        }
-      });
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
