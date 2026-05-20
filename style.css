@@ -615,6 +615,11 @@ footer {
   gap: 10px;
 }
 
+.footer-col:last-child {
+  align-items: flex-end;
+  text-align: right;
+}
+
 .footer-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
